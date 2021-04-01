@@ -1,0 +1,20 @@
+{
+  "name": "clone_ozon",
+  "version": "0.0.1",
+  "description": "Хочу создать качественный клон озона, сверстать его",
+  "main": "index.html",
+  "scripts": {
+    "test": "hello world"
+  },
+  "keywords": [
+    "gulp_sass"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bulma": "^0.9.2"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}
