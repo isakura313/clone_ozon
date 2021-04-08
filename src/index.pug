@@ -3,5 +3,21 @@ html(lang='ru')
 head
     link(rel="stylesheet" href='./css/style.css')
 body
-    h1 hello
-    p privet
+    div(class="header_top")
+        img(src="https://cdn1.ozone.ru/s3/cms/b7/t21/wc1450/2500_2.jpg")
+    div(class="wrapper_links")
+        div(class="links")
+            -links = ['Мобильное приложение', 'Реферальная программа', 'Зарабатывай с Ozon', 'Подарочные сертификаты', 'Пункты выдачи']
+            each item in links
+                a(href='#')
+                    span= item
+    div.search_bar
+        div.img_logo 
+        button.catalog_btn.button Каталог
+        input(class='main_input' type='text')
+        button.search_btn
+        div.wrap_auth
+            div.icon
+            div.icon
+            div.icon
+            div.icon

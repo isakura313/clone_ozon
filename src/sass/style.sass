@@ -1,0 +1,35 @@
+@import _var.sass
+@import '../../node_modules/bulma/sass/base/minireset.sass'
+@import '../../node_modules/bulma/sass/elements/button.sass'
+@import '../../node_modules/bulma/sass/utilities/extends.sass'
+.wrapper_links
+    display: flex
+    justify-content: flex-end
+    .links
+        display: flex
+        justify-content: space-around
+        padding: 4px
+        width: 80%
+        a
+            text-decoration: none
+            span
+                color: $dark_grey
+
+.search_bar
+    display: flex
+    justify-content: spacea-around
+    .img_logo
+        background-image: url("https://cdn1.ozone.ru/s3/cms/aa/tcb/logo_ozon_24_7_oct.svg")
+        background-repeat: no-repeat
+        background-position: center center
+        width: 350px
+        height: 40px
+    .catalog_btn
+        background-color: $blue_color
+        color: $white_color
+    .main_input
+        width: 40%
+        outline: none
+        width: calc(100% - 10px)
+    .search_btn
+    .wrap_auth
