@@ -2,9 +2,12 @@ doctype html
 html(lang='ru')
 head
     link(rel="stylesheet" href='./css/style.css')
+    link(rel='stylesheet' href='./css/swiper-bundle.min.css')
+    //script(src='swiper-bundle.min.js')
+    //script(src='code.js')
 body
     div(class="header_top")
-        img(src="https://cdn1.ozone.ru/s3/cms/b7/t21/wc1450/2500_2.jpg")
+        img(src="https://cdn1.ozone.ru/s3/cms/b7/t21/wc1450/2500_2.jpg" class="header_top__image")
     div(class="wrapper_links")
         div(class="links")
             -links = ['Мобильное приложение', 'Реферальная программа', 'Зарабатывай с Ozon', 'Подарочные сертификаты', 'Пункты выдачи']
@@ -12,12 +15,25 @@ body
                 a(href='#')
                     span= item
     div.search_bar
-        div.img_logo 
+        div.img_logo
         button.catalog_btn.button Каталог
-        input(class='main_input' type='text')
-        button.search_btn
+        div.wrap_search
+            input(class="main_input" type='text' placeholder="искать на Ozon")
+            button.search_btn.button 🔍
         div.wrap_auth
-            div.icon
-            div.icon
-            div.icon
-            div.icon
+            div.icon.icon_face войти
+            div.icon.icon_box заказы
+            div.icon.icon_heart избранное
+            div.icon.icon_bag корзина
+div.swiper-container
+    div.swiper-wrapper
+        div.swiper-slide
+            img(src='https://cdn1.ozone.ru/s3/sellerassets/c1450/357b8e54-8c9f-11eb-9864-16cf5e40fc22.jpeg')
+        div.swiper-slide
+            img(src='https://cdn1.ozone.ru/s3/sellerassets/c1450/664d1fd9-9152-11eb-8fe5-1a7faf841358.jpeg')
+        div.swiper-slide
+            img(src='https://cdn1.ozone.ru/s3/sellerassets/c1450/a3b026ec-9855-11eb-9e2c-0a526e2f90e3.jpeg')
+script(src="https://unpkg.com/swiper/swiper-bundle.js")
+script(src="https://unpkg.com/swiper/swiper-bundle.min.js")
+script(src='code.js')
+
